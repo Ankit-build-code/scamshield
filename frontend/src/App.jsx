@@ -12,9 +12,8 @@ function speak(text) {
   u.rate = 0.9;
   window.speechSynthesis.speak(u);
 }
-
-const API_URL = "http://127.0.0.1:8000/check";
-const REPORT_URL = "http://127.0.0.1:8000/report";
+const API_URL = "https://scamshield-x9s4.onrender.com/check";
+const REPORT_URL = "https://scamshield-x9s4.onrender.com/report";
 function getDeviceId() {
   let id = localStorage.getItem("scamshield_device_id");
   if (!id) {
